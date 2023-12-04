@@ -10,15 +10,62 @@
 			"name": "New Game",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/new?w=10&h=10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"new"
+					],
+					"query": [
+						{
+							"key": "w",
+							"value": "10"
+						},
+						{
+							"key": "h",
+							"value": "10"
+						}
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Validator",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gameId\" : \"new_game_id\",\r\n    \"width\" : 10,\r\n    \"height\" : 10,\r\n    \"score\" : 0,\r\n    \"fruit\" : {\r\n        \"x\" : 0,\r\n        \"y\" : 1\r\n    },\r\n    \"snake\" : {\r\n        \"x\" : 0,\r\n        \"y\" : 0,\r\n        \"velX\": 1,\r\n        \"velY\" : 0\r\n    },\r\n    \"ticks\" : [\r\n        {\"velX\": 1, \"velY\": 0},\r\n        {\"velX\": 0, \"velY\": 1}\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/validate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"validate"
+					]
+				}
 			},
 			"response": []
 		}
