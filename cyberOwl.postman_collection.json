@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "fe92700d-89bf-42ca-b970-24b7e3ab4f9a",
+		"name": "cyberOwl",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20180223"
+	},
+	"item": [
+		{
+			"name": "New Game",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Validator",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
